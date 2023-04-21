@@ -1,0 +1,1 @@
+Comando git para bajar los cambios de la nube a el computador
