@@ -1,63 +1,98 @@
-body{font-family: "roboto" !important;
+body {
+	background-color: black !important;
+	text-align: center !important;
 }
 
-.card { margin-top: 30px;
+#fondo {
+background-color: black !important;
+width: 100vw;
+height: 100vh;
+object-fit: cover;
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+z-index: -1;
 }
 
-.card-title {font-weight: 300 !important;
-    color: #212529;
-    font-size: 20px !important;
-
+footer {
+	position: absolute;
+	bottom: 0;
+	z-index: 20;
+	font-family: "Roboto";
+	font-size: calc(0.8rem + 0.1vw) !important;
 }
 
-.empresa {font-weight: 300 !important;
-    font-size: 16px !important;
-    color: #707070;
+#titulo {
+	animation: fade-down 1.5s;
+	left: 0px;
+	right: 0px;
+	top: 90px;
+	bottom: 0;
+	z-index: 2;
+	position: absolute;
+	font-family: "Roboto";
 }
 
-.direccion {font-weight: 300 !important;
-    font-size: 13px !important;
-    color: #707070;}
 
-    .valor{text-align: right;
-
-    }
-
-.precio {font-weight: 300 !important;
-    font-size: 16px !important;
-    color: #707070;
-    display: inline-block;
-    margin-right: 10px;
+#on {
+	left: 0px;
+	right: 0px;
+	top: 165px;
+	bottom: 0;
+	z-index: 2;
+	position: absolute;
 }
 
-.precioofe {font-weight: 500 !important;
-    font-size: 20px !important;
-    color: #28A745;
-    display: inline-block;
+.off {
+	left: 0;
+	right: 0;
+	top: 165px;
+	bottom: 0;
+	z-index: 1;
+	position: absolute;
 }
 
-.newstler {font-weight: 500 !important;
-    font-size: 21px !important;
-    padding-top: 30px ;}
+  .video-container{
+	position: fixed;
+	min-width: 100%;
+	min-height: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	object-fit: cover;
+  }
+  
 
-.casilla1 {margin-top: -15px !important;}
+  @media (min-aspect-ratio: 16/9) {
+	.video-container iframe {
+	  height: 56.25vw;
+	}
+  }
+  @media (max-aspect-ratio: 16/9) {
+	.video-container iframe {
+	  width: 177.78vh;
+	}
+  }
 
-.casilla2 {margin-top: -10px !important;}
 
-.btn-light {font-weight: 500 !important;
-    font-size: 16px !important;
-    color: #212529 !important;
-    height: 40px;
-    width: 112px;
-}
+  a:link, a:visited, a:hover{
+	text-decoration: none !important;
+	color: white !important;
+  }  
+  
 
-.form-control {font-weight: 300 !important;
-    font-size: 16px !important;
-    color: #707070 !important;
+  @keyframes fade-down {
+	0% {
+		opacity: 0;
+		transform: translateY(-30px) scale(0.9);	
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px) scale(1);	
+	}
 
-}
-
-footer p {font-weight: 300 !important;
-    font-size: 16px !important;
-    color: #707070;
 }
