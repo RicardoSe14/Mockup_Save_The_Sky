@@ -1,8 +1,7 @@
 
   
   $('#on').click(function(e) {
-    
-    // Resetear, por si acaso has estado jugando con la otra propiedad
+  
     $('.hide').css('display', 'block');
     
     if( $('.hide').css('visibility') != 'hidden' ) {
@@ -14,7 +13,6 @@
 
   $('#off').click(function(e) {
     
-    // Resetear, por si acaso has estado jugando con la otra propiedad
     $('.hide').css('display', 'block');
     
     if( $('.hide').css('visibility') != 'hidden' ) {
